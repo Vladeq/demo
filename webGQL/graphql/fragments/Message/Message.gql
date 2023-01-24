@@ -1,0 +1,28 @@
+fragment MessageFragment on MessageModel {
+  id
+  chatId
+  text
+  type
+  createdAt
+  systemMessageType
+  mediaUrl
+  mediaWeight
+  mediaName
+  status
+  contractData {
+    arrivalDate
+    departureDate
+    comment
+    cost
+    apartmentRentPeriodType
+    shortTermRentCancellationPolicyType
+    rules {
+      ...apartmentAdRulesModelFragment
+    }
+  }
+  sender {
+    id
+    avatarKey
+    firstName
+  }
+}

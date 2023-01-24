@@ -1,0 +1,9 @@
+mutation SetIdentityDocuments($input: ProfileAddIdentityDocumentRequest!) {
+  user__profile_addIdentityDocuments(input: $input) {
+    user {
+      id
+      identityDocuments
+      identityStatus
+    }
+  }
+}

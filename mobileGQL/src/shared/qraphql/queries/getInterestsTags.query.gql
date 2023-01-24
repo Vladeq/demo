@@ -1,0 +1,6 @@
+query GetInterestsTags {
+  getAllCustomerTags {
+    id
+    title
+  }
+}

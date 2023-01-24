@@ -1,0 +1,4 @@
+fragment apartmentAdDetailsFragment on ApartmentAdDetailsModel {
+  numberOfGuests
+  numberOfRooms
+}

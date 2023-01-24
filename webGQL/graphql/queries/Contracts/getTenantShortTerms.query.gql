@@ -1,0 +1,36 @@
+query getActiveTenantShortTerms($input: TenantShortTermRentContractsRequest!) {
+  contract__tenant_shortTermRents(input: $input) {
+    data {
+      id
+      apartmentAdId
+      arrivalDate
+      departureDate
+      landlord {
+        firstName
+      }
+      apartmentAd {
+        description {
+          description
+          name
+        }
+        photos {
+          fileKey
+        }
+        rentPeriodType
+        address {
+          city
+          country
+          houseNumber
+          region
+          street
+        }
+      }
+      cost
+    }
+    pageInfo {
+      afterCursor
+      count
+      perPage
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query GetMyChats($input: MyChatsRequest!) {
+  chat__myChats(input: $input) {
+    data {
+      ...chatFragment
+    }
+    isChatsExist
+    pageInfo {
+      ...pageAfterCursorInfoFragment
+    }
+  }
+}

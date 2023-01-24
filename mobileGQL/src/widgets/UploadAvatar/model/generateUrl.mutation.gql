@@ -1,0 +1,6 @@
+mutation GenerateUrl($filename: String!) {
+  customerUploadPublicUrlGenerate(input: { filename: $filename }) {
+    fileKey
+    signedUrl
+  }
+}

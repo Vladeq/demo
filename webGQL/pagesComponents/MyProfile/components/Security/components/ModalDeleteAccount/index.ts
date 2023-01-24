@@ -1,0 +1,1 @@
+export { ModalDeleteAccount } from './ModalDeleteAccount';

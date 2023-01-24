@@ -1,0 +1,19 @@
+mutation ConfirmCode($input: SignInByPhoneConfirmCodeRequest!) {
+    user__signInByPhone_confirmCode(input: $input) {
+        refreshToken
+        problem{
+            message
+        }
+        token,
+        user {
+            id
+            lastName
+            firstName
+            phone
+            email
+            birthDate
+            avatarKey
+            createdAt
+        }
+    }
+}

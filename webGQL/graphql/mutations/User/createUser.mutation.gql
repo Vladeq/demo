@@ -1,0 +1,19 @@
+mutation CreateUser($input: SignUpByPhoneCreateUserRequest!) {
+  user__signUpByPhone_createUser(input: $input) {
+    problem {
+      message
+    }
+    refreshToken
+    token
+    user {
+      id
+      lastName
+      firstName
+      phone
+      email
+      birthDate
+      avatarKey
+      createdAt
+    }
+  }
+}

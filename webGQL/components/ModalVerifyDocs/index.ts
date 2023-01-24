@@ -1,0 +1,1 @@
+export { ModalVerifyDocs } from './ModalVerifyDocs';

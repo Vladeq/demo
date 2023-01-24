@@ -1,0 +1,8 @@
+mutation EditBirthdate($input: ProfileEditBirthdateRequest!) {
+  user__profile_editBirthdate(input: $input) {
+    user {
+      id
+      birthDate
+    }
+  }
+}

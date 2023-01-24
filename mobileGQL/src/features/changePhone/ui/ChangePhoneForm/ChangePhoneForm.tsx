@@ -1,0 +1,40 @@
+import React, { FC } from 'react';
+import { Controller } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
+import { View, ViewProps } from 'react-native';
+import { AppButton, AppInput } from 'shared/ui';
+
+import { PHONE_LENGTH } from '../../config';
+import { useChangePhoneForm } from '../../models';
+
+const ChangePhoneForm: FC<ViewProps> = (props) => {
+  const { t } = useTranslation();
+  const { control, watchPhone, onSubmit, isSubmitting } = useChangePhoneForm();
+
+  return (
+    <View {...props}>
+      <Controller
+        control={control}
+        name="phone"
+        rules={{ minLength: { value: PHONE_LENGTH, message: t('validation.incorrectPhoneFormat') } }}
+        render={({ field, fieldState }) => (
+          <AppInput.PhoneField
+            phoneLength={PHONE_LENGTH}
+            value={field.value}
+            onChangeText={field.onChange}
+            onBlur={field.onBlur}
+            error={fieldState.error?.message}
+          />
+        )}
+      />
+      <AppButton.SimpleButton
+        isDisabled={watchPhone.length < PHONE_LENGTH}
+        isLoading={isSubmitting}
+        onPress={onSubmit}>
+        {t('features.changePhone.form.continue')}
+      </AppButton.SimpleButton>
+    </View>
+  );
+};
+
+export default ChangePhoneForm;

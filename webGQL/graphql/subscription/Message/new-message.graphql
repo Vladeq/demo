@@ -1,0 +1,5 @@
+subscription NewMessage($userChatRole: UserChatRole!) {
+  newMessage(userChatRole: $userChatRole) {
+    ...MessageFragment
+  }
+}

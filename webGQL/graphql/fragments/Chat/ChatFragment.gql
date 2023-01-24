@@ -1,0 +1,24 @@
+fragment chatFragment on ChatModel {
+  id
+  isActive
+  unreadMessageCount
+  apartmentAdIds {
+    longTermRentId
+    shortTermRentId
+  }
+  apartmentAdPhotos {
+    fileKey
+  }
+  lastMessage {
+    ...MessageFragment
+  }
+  contract {
+    ...ContractChatFragment
+  }
+  members {
+    id
+    firstName
+    avatarKey
+    isIdentityApproved
+  }
+}

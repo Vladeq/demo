@@ -1,0 +1,13 @@
+query GetCards {
+    innopay__myCards {
+        cardHolder,
+        cardType,
+        cnpCardId,
+        createdAt,
+        deletedAt,
+        id,
+        panMasked,
+        sinkNode,
+        updatedAt
+    }
+}

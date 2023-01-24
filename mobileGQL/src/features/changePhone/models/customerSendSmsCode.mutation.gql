@@ -1,0 +1,9 @@
+mutation CustomerSendSmsCode($phone: String!) {
+  customerSendSmsCode(phone: $phone) {
+    error {
+      ...SnsErrorUnion
+    }
+    smsCode
+    success
+  }
+}

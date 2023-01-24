@@ -1,0 +1,9 @@
+mutation SignIn($input: SignInByPhoneSendCodeRequest!) {
+  user__signInByPhone_sendCode(input: $input) {
+    smscode,
+    ok,
+    problem {
+    message
+  }
+  }
+}

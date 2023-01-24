@@ -1,0 +1,7 @@
+mutation fcmTokenUpdate($deviceId: String!, $fcmToken: String!) {
+  customerFcmTokenUpdate(input: { deviceId: $deviceId, fcmToken: $fcmToken }) {
+    customer {
+      id
+    }
+  }
+}

@@ -1,0 +1,6 @@
+query GetStep ($input: MyApartmentAdRequest!){
+    apartmentAd__myApartmentAd(input: $input){
+        id,
+        completeStep
+    }
+}

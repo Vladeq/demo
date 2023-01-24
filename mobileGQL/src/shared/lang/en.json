@@ -1,0 +1,311 @@
+{
+  "en": {
+    "translation": {
+      "screens": {
+        "SignIn": {
+          "welcome": "Welcome to Initiate",
+          "agreements": {
+            "text": "By clicking \"Continue\" you agree to the ",
+            "privacy": "Privacy\u00a0Policy",
+            "and": "\nand ",
+            "terms": "Terms\u00a0of\u00a0Use"
+          }
+        },
+        "VerificationCode": {
+          "title": "Verification code",
+          "description": "Enter the {{codeLength}}-digit code from the SMS sent to your phone\u00a0number."
+        },
+        "Onboarding": {
+          "step1": {
+            "title": "Locate people around you",
+            "description": "Find people within a 20 meters radius from you"
+          },
+          "step2": {
+            "title": "Initiate your interest",
+            "description": "Find someone you like, press Initiate, app will send anonymous notification to the person. Once, both parties initiate each other, the match will be revealed."
+          },
+          "step3": {
+            "title": "Similar interests",
+            "description": "Our Premium Members get visibility into similar interests in addition to unlimited Initiates. "
+          },
+          "step4": {
+            "title": "Super likes",
+            "description": "Premium Members also have the option to Super Initiate. This lets the other person know who Initiated without a Mutual Initiate."
+          },
+          "skip": "Skip",
+          "next": "Next",
+          "getStarted": "Get started"
+        },
+        "Viewer": {
+          "settings": "Settings",
+          "subscription": "Subscription",
+          "privacyPolicy": "Privacy Policy",
+          "aboutApp": "About app",
+          "logout": "Log out"
+        },
+        "CreateAccount": {
+          "step1": {
+            "title": "What's your name?"
+          },
+          "step2": {
+            "title": "Add photo"
+          },
+          "step3": {
+            "title": "Interests",
+            "info": "Choose 5 interests that characterize you"
+          },
+          "step4": {
+            "title": "Add location",
+            "enable": "Enable location",
+            "enableInfo": "Initiate collects location data so you’ll be visible to other users on the map even when the app is in the background. You can turn off your visibility in Settings."
+          },
+          "form": {
+            "btnContinue": "Continue",
+            "namePlaceholder": "Name"
+          },
+          "btnAllowLocation": "Allow location",
+          "btnComplete": "Complete"
+        },
+        "EditProfile": {
+          "title": "Edit profile",
+          "btnSave": "Save",
+          "namePlaceholder": "Enter your name",
+          "btnGoToInterests": "Interests",
+          "photoError": "Photo upload error"
+        },
+        "EditInterests": {
+          "title": "Interests"
+        },
+        "Home": {
+          "networkError": "Connection was lost. Please try again",
+          "MapTab": {
+            "emptyUsersText": "We haven’t found anyone nearby. Check back here later.",
+            "peopleNearby": "{{length}} people nearby"
+          },
+          "UserListTab": {
+            "title": "People nearby",
+            "emptyUsersText": "We haven't found anyone around. Check back here later."
+          },
+          "EmptyLocationBlock": {
+            "title": "Enable location",
+            "description": "In order yo use Initiate please enable location",
+            "button": "Go to settings"
+          }
+        },
+        "History": {
+          "title": "Initiates",
+          "EmptyState": {
+            "title": "You don’t have any initiates."
+          },
+          "newNotificationTitle": "new notifications",
+          "oldNotificationTitle": "earlier"
+        },
+        "Profile": {
+          "complaintModal": {
+            "title": "Do you really want to report this user?",
+            "btnCancel": "Cancel",
+            "btnReport": "Report",
+            "toasterReport": "Your report has been sent",
+            "networkError": "Connection was lost. Please try again"
+          }
+        },
+        "Match": {
+          "title": "Mutual initiate!",
+          "youAnd": "You and",
+          "description": "find each other interesting! Go walk up to them and Initiate an in-person conversation.",
+          "maybe": "Maybe try guessing their name",
+          "goodLuck": "Good Luck !",
+          "goPremium": "Go Premium",
+          "seeProfile": "See Profile"
+        },
+        "Settings": {
+          "title": "Settings",
+          "menu": {
+            "pushNotification": "Push notifications",
+            "phoneNumber": "Phone number",
+            "showMeInApp": "Show me in app"
+          },
+          "deleteAccount": "Delete account",
+          "deleteModal": {
+            "question": "Are you sure you want to delete your account?",
+            "cancel": "Cancel",
+            "confirm": "Delete"
+          }
+        },
+        "Notifications": {
+          "title": "Push notifications",
+          "newInitiate": {
+            "title": "New Initiate",
+            "description": "You just got a new initiate"
+          },
+          "mutualInitiate": {
+            "title": "Mutual Initiate",
+            "description": "Your initiates matched"
+          },
+          "superLike": {
+            "title": "Super Like",
+            "description": "You’ve been super Liked"
+          }
+        },
+        "EditPhone": {
+          "title": "Phone number"
+        },
+        "EditPhoneCode": {
+          "title": "Verification code",
+          "description": "Enter the {{codeLength}}-digit code from the SMS sent to your phone\u00a0number."
+        },
+        "Subscriptions": {
+          "title": "Subscription",
+          "freeStatusText": "You have a free subscription",
+          "premiumStatusText": "You have Premium subscription",
+          "perMonth": "per month",
+          "dateEndSubscriptions": "Date of the next write-off",
+          "unsubscribe": "Unsubscribe"
+        }
+      },
+      "widgets": {
+        "UploadAvatar": {
+          "model": {
+            "useGetPictureWithPermission": {
+              "cropperToolbarTitle": "Edit your photo",
+              "alert": {
+                "title": "Permission denied",
+                "description": "We need access to your photo library in order to upload a photo.",
+                "close": "Close",
+                "settings": "Settings"
+              },
+              "uploadError": "Loading error! Please try again or choose a different photo",
+              "networkError": "Connection was lost. Please try again"
+            }
+          }
+        }
+      },
+      "features": {
+        "auth": {
+          "form": {
+            "phone": "Phone number",
+            "continue": "Continue"
+          },
+          "facebook": "Continue with Facebook",
+          "google": "Continue with Google",
+          "apple": "Continue with Apple",
+          "resendCode": "Resend code",
+          "logout": {
+            "modalText": "Are you sure you want to log out?",
+            "cancel": "Cancel",
+            "confirm": "Log out"
+          },
+          "errors": {
+            "verifyCodeError": "Verification code doesn’t match",
+            "changeNumberError": "Couldn't change the number, please try again"
+          }
+        },
+        "subscribe": {
+          "useSubscribe": {
+            "subscribeError": "An error occurred while trying to subscribe"
+          },
+          "subscribeContent": {
+            "title": "Upgrade to Premium",
+            "freePlan": {
+              "title": "Free",
+              "item1": "1 Super like",
+              "item2": "Hidden interests",
+              "item3": "3 Initiates a week"
+            },
+            "premiumPlan": {
+              "title": "Premium",
+              "item1": "3 Super likes a week",
+              "item2": "See interests",
+              "item3": "Unlimited initiates"
+            },
+            "period": "month",
+            "submitButton": "Continue",
+            "cancelButton": "No Thanks",
+            "upgradeButton": "Upgrade",
+            "footer": {
+              "start": "Automatic payments with the ability to cancel at any time.\nBy clicking continue, you agree to the ",
+              "terms": "Terms of Use",
+              "and": " and ",
+              "agreements": "User Agreement."
+            }
+          }
+        },
+        "initiate": {
+          "error": "Please wait and try again",
+          "success": "Successfully initiated",
+          "InitiateButton": {
+            "Initiate": "Initiate",
+            "Initiated": "Initiated"
+          }
+        },
+        "superLike": {
+          "error": "Please wait and try again",
+          "likesLimitError": "Your super likes limit is over",
+          "success": "Successfully super like"
+        },
+        "location": {
+          "alert": {
+            "title": "Permission denied",
+            "description": "Initiate collects location data so you’ll be visible to other users on the map even when the app is in the background. You can turn off your visibility in Settings. ",
+            "close": "Close",
+            "settings": "Settings"
+          }
+        },
+        "changePhone": {
+          "form": {
+            "phone": "Phone number",
+            "continue": "Change number"
+          },
+          "resendCode": "Resend code",
+          "errors": {
+            "verifyCodeError": "Verification code doesn’t match"
+          }
+        }
+      },
+      "entities": {
+        "toaster": {
+          "defaultMessage": "Something went wrong. Please try again."
+        },
+        "actionSheet": {
+          "cancel": "Cancel"
+        },
+        "premiumButton": {
+          "title": "Upgrade to Premium",
+          "description": "Get access to unlimited opportunities"
+        },
+        "history": {
+          "isInitiate": "Initiated you",
+          "isSuperLike": "Super liked you",
+          "isMutual": "Mutual initiate"
+        }
+      },
+      "ui": {
+        "customTabBar": {
+          "home": "Home",
+          "history": "Initiates",
+          "viewer": "Profile"
+        },
+        "subscribeStatusBadge": {
+          "free": "Free",
+          "premium": "Premium"
+        }
+      },
+      "utils": {},
+      "errors": {
+        "unknownError": "Something went wrong. Please try again.",
+        "networkError": "Connection was lost. Please try again",
+        "phoneAlreadyExistsError": "This number already exists"
+      },
+
+      "toasters": {
+        "error": "Something went wrong. Please try again.",
+        "saved": "Changes successfully saved"
+      },
+      "validation": {
+        "incorrectPhoneFormat": "Incorrect phone format",
+        "minNameLength": "The name must be more than 2 letters",
+        "incorrectNameFormat": "Incorrect name format"
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+query GetShortTermApartment($id: FindShortTermRentAdRequest!) {
+  apartmentAd__find_shortTermRentAd(input: $id) {
+    data {
+      apartmentAdId
+      arrivalTime
+      bookingAccessInMonths
+      cancellationPolicy
+      cost
+      createdAt
+      currency
+      declineReason
+      deletedAt
+      departureTime
+      id
+      isApproved
+      lockedDates {
+        endDate
+        startDate
+      }
+      rentBookingType
+      status
+      updatedAt
+      apartmentAd {
+        address {
+          city
+          country
+          houseNumber
+          lat
+          lng
+          region
+          street
+        }
+        apartmentType
+        contractRequests {
+          id
+          apartmentAdId
+          apartmentRentPeriodType
+          arrivalDate
+          createdAt
+          deletedAt
+          departureDate
+          guests {
+            numberOfAdult
+            numberOfChildren
+            numberOfPets
+          }
+          status
+          tenantId
+          updatedAt
+          contract {
+            id
+            status
+          }
+        }
+        createdAt
+        defaultPaymentMethod
+        deletedAt
+        description {
+          description
+          forFamily
+          freeParking
+          name
+          quite
+          remoteView
+          selfCheckIn
+          workSpace
+        }
+        details {
+          numberOfRooms
+          numberOfGuests
+        }
+        id
+        landlord {
+          avatarKey
+          birthDate
+          createdAt
+          deletedAt
+          firstName
+          gender
+          id
+          isIdentityApproved
+          isPhoneApproved
+          lastName
+          middleName
+          updatedAt
+        }
+        landlordId
+        photos {
+          fileKey
+          order
+        }
+        rentPeriodType
+        rules {
+          allowedToHangingOut
+          allowedToSmoke
+          allowedWithChildren
+          allowedWithPets
+        }
+        updatedAt
+        videos {
+          fileKey
+          order
+        }
+      }
+    }
+    averageResponseOnRequest {
+      days
+      hours
+      minutes
+    }
+  }
+}

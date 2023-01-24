@@ -1,0 +1,5 @@
+query GetChatById($input: FindChatRequest!) {
+  chat__byId(input: $input) {
+    ...chatFragment
+  }
+}

@@ -1,0 +1,8 @@
+mutation SetBlockedCustomer($id: UUID!) {
+  customerBlockCustomer(customerId: $id) {
+    record {
+      isBlocked
+      isMuted
+    }
+  }
+}

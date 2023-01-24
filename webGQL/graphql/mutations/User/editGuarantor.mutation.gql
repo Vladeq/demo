@@ -1,0 +1,8 @@
+mutation EditGuarantor($input: ProfileEditGuarantorRequest!) {
+  user__profile_editGuarantor(input: $input) {
+    user {
+     id
+     guarantors { phone, lastName, firstName }
+    }
+  }
+}

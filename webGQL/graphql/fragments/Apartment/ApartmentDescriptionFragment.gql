@@ -1,0 +1,10 @@
+fragment apartmentDescriptionFragment on ApartmentAdDescriptionModel {
+  description
+  forFamily
+  freeParking
+  name
+  quite
+  remoteView
+  selfCheckIn
+  workSpace
+}

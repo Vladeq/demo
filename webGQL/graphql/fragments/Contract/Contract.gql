@@ -1,0 +1,32 @@
+fragment ContractChatFragment on ContractChatModel {
+  id
+  shortTermRentCancellationPolicyType
+  apartmentRentPeriodType
+  cost
+  arrivalDate
+  departureDate
+  status
+  apartmentAd {
+    id
+    details {
+      numberOfRooms
+    }
+  }
+  baseApartmentAdData {
+    title
+    address {
+      ...BaseContractAddressFragment
+    }
+  }
+  guests {
+    numberOfAdult
+    numberOfChildren
+    numberOfPets
+  }
+  rules {
+    allowedToHangingOut
+    allowedToSmoke
+    allowedWithChildren
+    allowedWithPets
+  }
+}

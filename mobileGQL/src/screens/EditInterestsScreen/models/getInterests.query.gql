@@ -1,0 +1,9 @@
+query GetInterests {
+  me {
+    id
+    tags {
+      id
+      title
+    }
+  }
+}

@@ -1,0 +1,13 @@
+query GetFourth ($input: MyApartmentAdRequest!){
+    apartmentAd__myApartmentAd(input: $input){
+        id,
+        address {
+            lat,
+            lng,
+            street,
+            houseNumber,
+            country,
+            city
+        }
+    }
+}

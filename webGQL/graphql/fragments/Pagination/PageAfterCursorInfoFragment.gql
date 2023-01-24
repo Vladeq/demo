@@ -1,0 +1,5 @@
+fragment pageAfterCursorInfoFragment on PageAfterCursorInfo {
+  afterCursor
+  count
+  perPage
+}

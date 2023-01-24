@@ -1,0 +1,6 @@
+query GetSecondStep ($input: MyApartmentAdRequest!){
+    apartmentAd__myApartmentAd(input: $input){
+        id,
+        apartmentType
+    }
+}

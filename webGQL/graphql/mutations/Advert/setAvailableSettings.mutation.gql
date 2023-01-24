@@ -1,0 +1,14 @@
+mutation SetAvailableSettings ($input: EditShortTermRentAvailabilitySettingsRequest!) {
+    apartmentAd__edit_availabilitySettings(input: $input){
+        apartmentAd {
+            id,
+            shortTermRent {
+                lockedDates {
+                    startDate,
+                    endDate
+                }
+                bookingAccessInMonths
+            }
+        }
+    }
+}

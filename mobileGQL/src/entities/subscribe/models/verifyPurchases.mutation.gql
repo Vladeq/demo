@@ -1,0 +1,7 @@
+mutation VerifyPurchases($input: ValidatePurchaseInput!) {
+  verify(input: $input) {
+    purchase {
+      id
+    }
+  }
+}

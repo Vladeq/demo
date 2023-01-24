@@ -1,0 +1,11 @@
+mutation SetOwnershipDocs($input: AddApartmentAdOwnershipDocumentRequest!) {
+  apartmentAd__add_ownershipDocuments(input: $input) {
+    apartmentAd {
+      id
+      longTermRent {
+        id
+        ownershipDocuments
+      }
+    }
+  }
+}

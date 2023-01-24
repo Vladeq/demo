@@ -1,0 +1,7 @@
+mutation InitiateOrSuperLikeCustomer($isSuperLike: Boolean = false, $customerId: UUID!) {
+  customerInitiateCustomer(customerId: $customerId, isSuperLike: $isSuperLike) {
+    createdAt
+    initiatedCustomerId
+    isSuperLike
+  }
+}

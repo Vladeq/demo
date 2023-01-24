@@ -1,0 +1,19 @@
+mutation SetImportantInfo($input: EditApartmentAdImportantInfoRequest!) {
+    apartmentAd__edit_importantInfo(input: $input){
+        apartmentAd {
+            id,
+            rules{
+                allowedToSmoke,
+                allowedWithPets,
+                allowedToHangingOut,
+                allowedWithChildren,
+                allowedToSmoke
+            }
+            shortTermRent{
+                arrivalTime,
+                cancellationPolicy
+            },
+
+        }
+    }
+}

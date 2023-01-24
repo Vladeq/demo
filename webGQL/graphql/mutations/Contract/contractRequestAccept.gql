@@ -1,0 +1,5 @@
+mutation ContractRequestAccept($input: AcceptRequest!) {
+  contractRequest__accept(input: $input) {
+    chatId
+  }
+}

@@ -1,0 +1,6 @@
+query GetMyPremiumStatus {
+  me {
+    id
+    isPremium
+  }
+}

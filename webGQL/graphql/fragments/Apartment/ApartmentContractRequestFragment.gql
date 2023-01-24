@@ -1,0 +1,17 @@
+fragment apartmentContractRequestFragment on ContractRequestModel {
+  apartmentAdId
+  apartmentRentPeriodType
+  arrivalDate
+  createdAt
+  deletedAt
+  departureDate
+  guests {
+    numberOfAdult
+    numberOfChildren
+    numberOfPets
+  }
+  id
+  status
+  tenantId
+  updatedAt
+}

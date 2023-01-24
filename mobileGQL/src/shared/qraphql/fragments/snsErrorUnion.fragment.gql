@@ -1,0 +1,14 @@
+fragment SnsErrorUnion on SnsErrorUnion {
+  ... on SnsExpiredCodeErrorModel {
+    message
+  }
+  ... on SnsPhoneIsBusyErrorModel {
+    message
+  }
+  ... on SnsSendSmsErrorModel {
+    message
+  }
+  ... on SnsWrongCodeErrorModel {
+    message
+  }
+}

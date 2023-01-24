@@ -1,0 +1,10 @@
+query GetChatMessages($input: ChatMessagesRequest!) {
+  chat__messages(input: $input) {
+    data {
+      ...MessageFragment
+    }
+    pageInfo {
+      ...pageBeforeCursorInfoFragment
+    }
+  }
+}

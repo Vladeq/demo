@@ -1,0 +1,5 @@
+query GetMeToEdit {
+  me {
+    ...MeFull
+  }
+}

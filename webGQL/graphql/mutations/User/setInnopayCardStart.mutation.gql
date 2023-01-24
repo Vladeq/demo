@@ -1,0 +1,9 @@
+mutation SetInnopayCardStart($input: SaveCardStartRequest!) {
+  innopay__saveCard_start(input: $input) {
+    ok
+    problem {
+      message
+    }
+    url
+  }
+}

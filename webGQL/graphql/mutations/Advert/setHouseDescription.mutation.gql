@@ -1,0 +1,17 @@
+mutation SetHouseDescription($input: EditApartmentAdDescriptionRequest!) {
+    apartmentAd__edit_description(input: $input) {
+        apartmentAd {
+            id,
+            description {
+                name,
+                description,
+                freeParking,
+                quite,
+                selfCheckIn,
+                workSpace,
+                forFamily,
+                remoteView,
+            }
+        }
+    }
+}

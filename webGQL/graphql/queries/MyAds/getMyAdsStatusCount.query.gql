@@ -1,0 +1,9 @@
+query getMyAdsStatusCount {
+    apartmentAd__myApartmentAd_statusCount {
+        ACTIVE,
+        DRAFT,
+        PAUSED,
+        PROCESSING,
+        PUBLISHED,
+    }
+}

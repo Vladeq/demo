@@ -1,0 +1,11 @@
+mutation ChangeRentBookingType ($input: ShortTermSwitchRentBookingTypeRequest!) {
+    apartmentAd__shortTerm_switchRentBookingType(input: $input){
+        apartmentAd {
+            id
+            shortTermRent {
+                id
+                rentBookingType
+            }
+        }
+    }
+}

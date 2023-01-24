@@ -1,0 +1,14 @@
+mutation CreateAdvert($input: CreateApartmentAdRequest!) {
+        apartmentAd__create(input: $input){
+            apartmentAd {
+                id,
+                longTermRent{
+                    id,
+                },
+                rentPeriodType,
+                shortTermRent {
+                    id
+                }
+            }
+        }
+}

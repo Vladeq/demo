@@ -1,0 +1,6 @@
+fragment apartmentAdRulesModelFragment on ApartmentAdRulesModel {
+  allowedToHangingOut
+  allowedToSmoke
+  allowedWithChildren
+  allowedWithPets
+}

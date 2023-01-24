@@ -1,0 +1,13 @@
+query GetShortApartmentsForMap($filter: FindShortTermRentAdsFilterRequest!) {
+    apartmentAd__find_shortTermRentAdsCluster(filter: $filter){
+        data {
+            cost,
+            apartmentType,
+            title,
+            photo,
+            lng,
+            lat,
+            id
+        }
+    }
+}

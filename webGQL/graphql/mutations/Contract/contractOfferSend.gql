@@ -1,0 +1,8 @@
+mutation ContractOfferSend($input: SendContractOfferRequest!) {
+  contract__offer_send(input: $input) {
+    contract {
+      id
+      status
+    }
+  }
+}

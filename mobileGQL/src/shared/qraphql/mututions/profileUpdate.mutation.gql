@@ -1,0 +1,7 @@
+mutation ProfileUpdate($name: String!, $avatar: S3FileKey!, $tagIds: [UUID!]) {
+  customerProfileUpdate(input: { name: $name, avatar: { image: $avatar }, tagIds: $tagIds }) {
+    user {
+      id
+    }
+  }
+}

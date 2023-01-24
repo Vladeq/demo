@@ -1,0 +1,11 @@
+mutation UpdateInterests($tagIds: [UUID!]) {
+  customerProfileUpdate(input: { tagIds: $tagIds }) {
+    user {
+      id
+      tags {
+        id
+        title
+      }
+    }
+  }
+}

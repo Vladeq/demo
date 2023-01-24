@@ -1,0 +1,11 @@
+query GetNotificationsSettings {
+  me {
+    id
+    notificationsSettings {
+      allowedSections
+      disabled
+      messagePreview
+      sound
+    }
+  }
+}

@@ -1,0 +1,15 @@
+query GetSixthStep ($input: MyApartmentAdRequest!){
+    apartmentAd__myApartmentAd(input: $input){
+        id,
+        description {
+            name,
+            description,
+            freeParking,
+            quite,
+            selfCheckIn,
+            workSpace,
+            forFamily,
+            remoteView,
+        }
+    }
+}

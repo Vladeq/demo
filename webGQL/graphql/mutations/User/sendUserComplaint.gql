@@ -1,0 +1,5 @@
+mutation SendUserComplaint($input: CreateUserComplaintRequest!) {
+  user_complaint__send(input: $input) {
+    ok
+  }
+}

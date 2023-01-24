@@ -1,0 +1,9 @@
+mutation CustomerVerifySmsCode($code: Int!) {
+  customerVerifySmsCode(input: { code: $code }) {
+    error {
+      ...SnsErrorUnion
+    }
+    smsCode
+    success
+  }
+}

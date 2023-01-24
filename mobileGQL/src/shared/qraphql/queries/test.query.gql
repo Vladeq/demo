@@ -1,0 +1,14 @@
+query Viewer {
+  me {
+    id
+    isPremium
+    lang
+    fcmTokens
+    avatar {
+      image
+      imageUrl
+      preview
+      previewUrl
+    }
+  }
+}

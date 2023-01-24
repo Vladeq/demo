@@ -1,0 +1,24 @@
+fragment MeFull on MeCustomerModel {
+  avatar {
+    image
+    imageUrl
+    preview
+    previewUrl
+  }
+  fcmTokens
+  id
+  isPremium
+  lang
+  name
+  notificationsSettings {
+    allowedSections
+    disabled
+    messagePreview
+    sound
+  }
+  phone
+  tags {
+    id
+    title
+  }
+}

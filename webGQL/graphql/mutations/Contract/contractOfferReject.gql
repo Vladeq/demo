@@ -1,0 +1,8 @@
+mutation ContractOfferReject($input: RejectContractOfferRequest!) {
+  contract__offer_reject(input: $input) {
+    contract {
+      id
+      status
+    }
+  }
+}

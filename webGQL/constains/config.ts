@@ -1,0 +1,7 @@
+export const AppConfig = {
+  GQL_API_URL: process.env.GQL_API_URL,
+  REST_API_URL: process.env.REST_API_URL,
+  GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
+  INNOPAY_RETURNING_URL: process.env.INNOPAY_RETURNING_URL,
+  INNOPAY_PAYMENT_RETURNING_URL: process.env.INNOPAY_PAYMENT_RETURNING_URL,
+};

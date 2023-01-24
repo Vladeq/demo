@@ -1,0 +1,54 @@
+query getActiveContractById($input: FindContractRequest!) {
+    contract__tenant_find(input: $input){
+        arrivalDate
+        departureDate
+        cost
+        apartmentAdId
+        guests {
+            numberOfAdult,
+            numberOfChildren
+        }
+        shortTermRentCancellationPolicyType
+        baseApartmentAdData {
+            address {
+                city
+                street
+                houseNumber
+            }
+            title
+        }
+        rules {
+            allowedWithPets,
+            allowedWithChildren,
+            allowedToSmoke,
+            allowedToHangingOut
+        }
+        apartmentRentPeriodType
+        apartmentAd {
+         shortTermRent {
+             id
+         }
+            longTermRent {
+                id
+            }
+            address {
+                lat
+                lng
+                city
+                street
+                houseNumber
+            }
+            photos {
+                fileKey
+            }
+        }
+        landlord {
+            id
+        }
+        tenant {
+            avatarKey,
+            firstName,
+            lastName
+        }
+    }
+}

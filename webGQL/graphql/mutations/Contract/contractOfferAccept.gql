@@ -1,0 +1,7 @@
+mutation ContractOfferAccept($input: AcceptContractOfferRequest!) {
+  contract__offer_accept(input: $input) {
+    contract {
+      ...ContractChatFragment
+    }
+  }
+}

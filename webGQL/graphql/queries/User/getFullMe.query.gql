@@ -1,0 +1,18 @@
+query GetFullMe {
+  user__me {
+    id,
+    firstName,
+    lastName,
+    middleName,
+    birthDate,
+    avatarKey,
+    gender,
+    identityStatus,
+    email,
+    phone,
+    guarantors {firstName, lastName, phone}
+    isPhoneApproved,
+    identityDocuments,
+    identityRejectReason,
+  }
+}

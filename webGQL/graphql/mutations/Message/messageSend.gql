@@ -1,0 +1,7 @@
+mutation MessageSend($input: SendMessageRequest!) {
+  message__send(input: $input) {
+    message {
+      ...MessageFragment
+    }
+  }
+}

@@ -1,0 +1,18 @@
+query GetAdvert($input: MyApartmentAdRequest!) {
+    apartmentAd__myApartmentAd(input: $input){
+        rentPeriodType,
+        id,completeStep,
+        rules {
+            allowedToHangingOut,
+            allowedToSmoke,
+            allowedWithChildren,
+            allowedWithPets
+        },
+        shortTermRent {
+            cancellationPolicy,
+            arrivalTime,
+            departureTime,
+            rentBookingType
+        },
+    }
+}

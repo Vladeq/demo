@@ -1,0 +1,9 @@
+query GetThirdStep($input: MyApartmentAdRequest!){
+    apartmentAd__myApartmentAd(input: $input){
+        id,
+        details {
+            numberOfRooms,
+            numberOfGuests
+        }
+    }
+}

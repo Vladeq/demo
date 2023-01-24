@@ -1,0 +1,22 @@
+fragment myApartmentFragment on ApartmentAdModel {
+  id
+  innopayCardId
+  rentPeriodType
+  landlord {
+    id
+    identityDocuments
+    isPhoneApproved
+    identityStatus
+  }
+  photos {
+    fileKey
+  }
+  description {
+    name
+  }
+  address {
+    city
+    street
+    houseNumber
+  }
+}

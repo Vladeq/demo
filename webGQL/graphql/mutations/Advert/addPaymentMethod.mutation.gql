@@ -1,0 +1,17 @@
+mutation AddPaymentMethod($input: AddApartmentAdPaymentMethodRequest!){
+    apartmentAd__add_paymentMethod(input: $input){
+        apartmentAd {
+            id,
+            innopayCardId,
+            landlord {
+                id
+            }
+            longTermRent {
+                id
+            }
+            shortTermRent {
+                id
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+mutation EditFirstStep($input: EditApartmentAdRequest!) {
+    apartmentAd__edit(input: $input){
+        apartmentAd {
+            id,
+            longTermRent{
+                id,
+            },
+            rentPeriodType,
+            shortTermRent {
+                id
+            }
+        }
+    }
+}

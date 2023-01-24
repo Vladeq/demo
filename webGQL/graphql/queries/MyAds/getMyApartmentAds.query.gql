@@ -1,0 +1,38 @@
+query getMyApartmentAds($input: MyApartmentAdsRequest!) {
+  apartmentAd__myApartmentAd_unionRentPeriods(input: $input) {
+    apartmentAdLongTermRent {
+      apartmentAdId
+      status
+      apartmentAd {
+        ...myApartmentFragment
+        longTermRent {
+          id
+          isApproved
+          cost
+          ownershipDocuments
+          declineReason
+        }
+        completeStep
+      }
+    }
+    apartmentAdShortTermRent {
+      apartmentAdId
+      status
+      apartmentAd {
+        ...myApartmentFragment
+        shortTermRent {
+          id
+          rentBookingType
+          isApproved
+          lockedDates {
+            endDate,startDate
+          }
+          bookingAccessInMonths
+          cost
+          declineReason
+        }
+        completeStep
+      }
+    }
+  }
+}

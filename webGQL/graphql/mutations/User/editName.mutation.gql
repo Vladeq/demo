@@ -1,0 +1,10 @@
+mutation EditName($input: ProfileEditNameRequest!) {
+  user__profile_editName(input: $input) {
+    user {
+     id
+     firstName
+     middleName
+     lastName
+    }
+  }
+}

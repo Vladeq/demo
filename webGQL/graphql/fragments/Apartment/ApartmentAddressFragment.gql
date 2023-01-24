@@ -1,0 +1,9 @@
+fragment apartmentAddressFragment on ApartmentAdAddressModel {
+  city
+  country
+  houseNumber
+  lat
+  lng
+  region
+  street
+}

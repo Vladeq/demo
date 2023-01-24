@@ -1,0 +1,8 @@
+mutation SetHouseType($input: EditApartmentAdTypeRequest!) {
+    apartmentAd__edit_type(input: $input ) {
+        apartmentAd {
+            id,
+            apartmentType
+        }
+    }
+}

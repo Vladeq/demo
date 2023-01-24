@@ -1,0 +1,8 @@
+mutation EditGender($input: ProfileEditGenderRequest!) {
+  user__profile_editGender(input: $input) {
+    user {
+     id
+     gender
+    }
+  }
+}

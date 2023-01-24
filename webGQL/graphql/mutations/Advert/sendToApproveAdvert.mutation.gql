@@ -1,0 +1,7 @@
+mutation SendToApproveAdvert($input: SendToApproveApartmentAdRequest!){
+    apartmentAd__send_to_approve(input: $input){
+        apartmentAd {
+            id
+        }
+    }
+}

@@ -1,0 +1,26 @@
+query GetCustomerById($id: UUID!) {
+  customerGetById(customerId: $id) {
+    ... on CustomerWithPremiumVisibleFieldsModel {
+      avatar {
+        imageUrl
+      }
+      hiddenName
+      id
+      # isMeInitiatedBy
+      blocked
+      tags {
+        id
+        title
+      }
+    }
+    ... on PublicCustomerModel {
+      avatar {
+        imageUrl
+      }
+      blocked
+      hiddenName
+      # isMeInitiatedBy
+      id
+    }
+  }
+}

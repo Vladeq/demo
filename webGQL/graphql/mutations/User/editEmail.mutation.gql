@@ -1,0 +1,11 @@
+mutation EditEmail($input: ProfileEditEmailRequest!) {
+  user__profile_editEmail(input: $input) {
+    problem {
+      message
+    }
+    user {
+      id
+      email
+    }
+  }
+}

@@ -1,0 +1,7 @@
+query GetLightMe {
+  user__me {
+    id
+    firstName
+    avatarKey
+  }
+}

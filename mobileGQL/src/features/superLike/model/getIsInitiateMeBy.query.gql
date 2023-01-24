@@ -1,0 +1,50 @@
+query GetIsInitiateMeBy($customerIds: [UUID!]!) {
+  customerGetByIds(customerIds: $customerIds) {
+    ... on CustomerWithPremiumVisibleFieldsModel {
+      avatar {
+        image
+        imageUrl
+        preview
+        previewUrl
+      }
+      blocked
+      hiddenName
+      id
+      lastInitiatedAt
+      isMeInitiatedBy
+      meRelatedAs {
+        isBlocked
+        isMuted
+      }
+      relation {
+        isBlocked
+        isMuted
+      }
+      tags {
+        id
+        title
+      }
+    }
+    ... on PublicCustomerModel {
+      avatar {
+        image
+        imageUrl
+        preview
+        previewUrl
+      }
+      blocked
+      hiddenName
+      id
+      lastInitiatedAt
+      isMeInitiatedBy
+      meRelatedAs {
+        isBlocked
+        isMuted
+      }
+      relation {
+        isBlocked
+        isMuted
+      }
+    }
+  }
+}

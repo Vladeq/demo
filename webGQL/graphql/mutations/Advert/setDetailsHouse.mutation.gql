@@ -1,0 +1,11 @@
+mutation SetDetailsHouse($input: EditApartmentAdDetailsRequest!) {
+    apartmentAd__edit_details(input:$input ){
+        apartmentAd {
+            id,
+            details {
+                numberOfGuests,
+                numberOfRooms
+            }
+        }
+    }
+}

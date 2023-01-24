@@ -1,0 +1,8 @@
+mutation EditAvatar($input: ProfileEditAvatarRequest!) {
+  user__profile_editAvatar(input: $input) {
+  	user{
+      id
+    	avatarKey
+  	}
+  }
+}

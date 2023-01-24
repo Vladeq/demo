@@ -1,0 +1,7 @@
+mutation PublishAdvertAsync($input: PublishApartmentAdRequest!) {
+    apartmentAd__publish(input: $input){
+        apartmentAd {
+            id
+        }
+    }
+}

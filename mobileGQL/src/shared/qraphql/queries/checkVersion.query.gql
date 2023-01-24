@@ -1,0 +1,3 @@
+query CheckVersion($appVersion: String!) {
+  checkVersion(GetVersionInput: { appVersion: $appVersion })
+}

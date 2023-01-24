@@ -1,0 +1,35 @@
+mutation SendContractRequest($input: SendRequest!) {
+  contractRequest__send(input: $input) {
+    contractRequest {
+      id
+      apartmentAdId
+      apartmentRentPeriodType
+      arrivalDate
+      createdAt
+      deletedAt
+      departureDate
+      apartmentAd {
+        id
+        contractRequests {
+          id
+          status
+        }
+      }
+      guests {
+        numberOfChildren
+        numberOfChildren
+      }
+      status
+      tenant {
+        firstName
+        id
+        lastName
+      }
+      tenantId
+      updatedAt
+    }
+    problem {
+      message
+    }
+  }
+}

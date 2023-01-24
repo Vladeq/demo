@@ -1,0 +1,3 @@
+mutation CustomerSignOut($deviceId: String!) {
+  customerSignOut(input: { deviceId: $deviceId })
+}

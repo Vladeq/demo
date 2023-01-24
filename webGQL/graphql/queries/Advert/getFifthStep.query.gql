@@ -1,0 +1,8 @@
+query GetFifthStep($input: MyApartmentAdRequest!) {
+    apartmentAd__myApartmentAd(input: $input){
+            id,photos {
+            fileKey,
+            order
+        }
+    }
+}

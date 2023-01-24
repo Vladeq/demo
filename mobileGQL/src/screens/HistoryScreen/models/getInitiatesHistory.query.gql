@@ -1,0 +1,35 @@
+query GetInitiatesHistory($limit: Float, $page: Float, $viewed: Boolean) {
+  getInitiatesHistory(input: { limit: $limit, page: $page, viewed: $viewed }) {
+    items {
+      lastActionAt
+      id
+      customer {
+        ... on CustomerWithPremiumVisibleFieldsModel {
+          id
+          avatar {
+            image
+            imageUrl
+          }
+          hiddenName
+          blocked
+          tags {
+            id
+            title
+          }
+        }
+        ... on PublicCustomerModel {
+          id
+          avatar {
+            image
+            imageUrl
+          }
+          hiddenName
+          blocked
+        }
+      }
+      isMutual
+      isSuperLike
+      viewed
+    }
+  }
+}

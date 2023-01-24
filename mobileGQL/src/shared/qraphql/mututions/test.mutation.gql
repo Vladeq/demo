@@ -1,0 +1,3 @@
+mutation TestMutation($fcmToken: String!) {
+  customerSignOut(input: { deviceId: $fcmToken })
+}

@@ -1,0 +1,15 @@
+export { HomePage } from './HomePage';
+export { MyProfile } from './MyProfile';
+export { ChooseRentType } from './ChooseRentType';
+export { TypeHousing } from './ChooseHouseType';
+export { AboutHouse } from './AboutHouse';
+export { ApartmentPage, ApartmentPageSkeleton } from './ApartmentPage';
+export { HouseMedias } from './HouseMedias';
+export { AddressHouse } from './AddressHouse';
+export { DescriptionHouse } from './DescriptionHouse';
+export { InformationHouse } from './InformationHouse';
+export { BookingPage } from './BookingPage';
+export { ListApartmentsShort } from './ListApartmentsShortPage';
+export { ListApartmentsLong } from './ListApartmentsLongPage';
+export { DocumentsPage } from './DocumentsPage';
+export { PaymentPage } from './PaymentPage';

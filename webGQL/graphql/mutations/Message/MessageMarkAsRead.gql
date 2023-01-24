@@ -1,0 +1,3 @@
+mutation MessageMarkAsRead($input: MarkMessageAsReadRequest!) {
+  message__markAsRead(input: $input)
+}

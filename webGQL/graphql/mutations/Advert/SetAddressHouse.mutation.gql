@@ -1,0 +1,15 @@
+mutation SetAddressHouse($input: EditApartmentAdAddressRequest!)  {
+        apartmentAd__edit_address(input:$input ){
+            apartmentAd {
+                id,
+                address {
+                    lat,
+                    lng,
+                    street,
+                    houseNumber,
+                    country,
+                    city
+                }
+            }
+        }
+}

@@ -1,0 +1,3 @@
+mutation DeleteAdvert($input: DeleteApartmentAdRequest!) {
+    apartmentAd__delete(input: $input)
+}

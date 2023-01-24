@@ -1,0 +1,14 @@
+fragment apartmentLandlordFragment on UserModel {
+  avatarKey
+  birthDate
+  createdAt
+  deletedAt
+  firstName
+  gender
+  id
+  isIdentityApproved
+  isPhoneApproved
+  lastName
+  middleName
+  updatedAt
+}

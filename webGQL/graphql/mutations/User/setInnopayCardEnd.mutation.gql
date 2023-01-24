@@ -1,0 +1,10 @@
+mutation SetInnopayCardEnd($input: SaveCardEndRequest!) {
+  innopay__saveCard_end(input: $input) {
+    card {
+      id
+      cardHolder
+      cardType
+      panMasked
+    }
+  }
+}
